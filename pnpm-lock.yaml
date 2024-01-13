@@ -6,8 +6,11 @@ settings:
 
 dependencies:
   expo:
-    specifier: ~50.0.0-preview.9
+    specifier: ~50.0.0-preview.10
     version: 50.0.0-preview.10(@babel/core@7.23.7)(@react-native/babel-preset@0.73.19)
+  expo-av:
+    specifier: ~13.10.2
+    version: 13.10.2(expo@50.0.0-preview.10)
   expo-status-bar:
     specifier: ~1.11.1
     version: 1.11.1
@@ -1777,7 +1780,7 @@ packages:
     resolution: {integrity: sha512-FQinlwHrTlJbntp8a7NAlCKedVXe06Va/0DSLXRO8lZVtgbEMrYYSUZWQNcOlNtc58c2elNph6z9dMOYwSo3JQ==}
     engines: {node: '>=12'}
     dependencies:
-      '@expo/spawn-async': 1.5.0
+      '@expo/spawn-async': 1.7.2
       exec-async: 2.2.0
     dev: false
 
@@ -1785,7 +1788,7 @@ packages:
     resolution: {integrity: sha512-JI9XzrxB0QVXysyuJ996FPCJGDCYRkbUvgG4QmMTTMFA1T+mv8YzazC3T9C1pHQUAAveVCre1+Pqv0nZXN24Xg==}
     dependencies:
       '@expo/json-file': 8.2.37
-      '@expo/spawn-async': 1.5.0
+      '@expo/spawn-async': 1.7.2
       ansi-regex: 5.0.1
       chalk: 4.1.2
       find-up: 5.0.0
@@ -3688,6 +3691,14 @@ packages:
     transitivePeerDependencies:
       - expo
       - supports-color
+    dev: false
+
+  /expo-av@13.10.2(expo@50.0.0-preview.10):
+    resolution: {integrity: sha512-JGeTWXOLtjCj5iQSwhZePQZgD9HajmFVCWjqTsKY8+ObNMQCW7JfIn06v0U3+GRT4Bz9HV1g7CiiWJqgMPCbJA==}
+    peerDependencies:
+      expo: '*'
+    dependencies:
+      expo: 50.0.0-preview.10(@babel/core@7.23.7)(@react-native/babel-preset@0.73.19)
     dev: false
 
   /expo-constants@15.4.3(expo@50.0.0-preview.10):
